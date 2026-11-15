@@ -1,0 +1,15 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    // min heap->min value->highest priority
+    
+    
+	priority_queue<int,vector<int>,greater<int>> pq;
+	
+pq.push(9);
+pq.push(876);
+pq.push(43);
+pq.push(23);
+cout<<pq.top();
+}
