@@ -1,0 +1,85 @@
+unorderd_maping
+
+
+#include <bits/stdc++.h>
+#include <map>
+#include <unordered_map>
+using namespace std;
+
+int main() {
+   unordered_map<string,string>able;
+   able ["pa"]="paris";
+    able.insert(make_pair("en","englad"));
+  pair<string,string> o;
+  o.first="ki";
+  o.second="kill";
+  able.insert(o);
+  cout<<able.at("ki")<<endl;
+  able.at("ki")="hell";
+  cout<<able.at("ki")<<endl;
+  able["ki"]="fire";
+  cout<<able.at("ki")<<endl;
+  unordered_map<string,string>::iterator it=able.begin();
+  while(it!=able.end()){
+     // cout<<it->first<<":"<<it->second <<endl;
+     pair<string,string> p=*it;
+     cout<<p.first<<":"<<p.second<<endl;
+     
+      it++;
+  }
+  cout<<able.size()<<endl;
+  if(able.find("ki")!=able.end()){
+      cout<<"key found"<<endl;}
+      else
+      cout<<"key not found"<<endl;
+  if(able.count("ki")==0){
+      cout<<"key found"<<endl;
+      
+  } else cout<<"key not found"<<endl;
+}
+
+
+            [ordered mapping]
+
+
+
+#include <bits/stdc++.h>
+#include <map>
+#include <unordered_map>
+using namespace std;
+
+int main() {
+  map<string,string>able;
+   able ["pa"]="paris";
+    able.insert(make_pair("en","englad"));
+  pair<string,string> o;
+  o.first="ki";
+  o.second="kill";
+  able.insert(o);
+  cout<<able.at("ki")<<endl;
+  able.at("ki")="hell";
+  cout<<able.at("ki")<<endl;
+  able["ki"]="fire";
+  cout<<able.at("ki")<<endl;
+  map<string,string>::iterator it=able.begin();
+  while(it!=able.end()){
+     // cout<<it->first<<":"<<it->second <<endl;
+     pair<string,string> p=*it;
+     cout<<p.first<<":"<<p.second<<endl;
+     
+      it++;
+  }
+  cout<<able.size()<<endl;
+  if(able.find("ki")!=able.end()){
+      cout<<"key found"<<endl;}
+      else
+      cout<<"key not found"<<endl;
+  if(able.count("ki")==0){
+      cout<<"key found"<<endl;
+      
+  } else cout<<"key not found"<<endl;
+}
+
+
+
+
